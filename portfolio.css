@@ -1,0 +1,508 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+}
+#part1{
+    position: relative;
+    width: 100%;
+   height: 120%;
+}
+
+
+
+nav{
+   height: 70px;
+   width: 100%;
+   background-color: black;
+   position: absolute;
+   top:0;
+}
+
+#part1 nav h1{
+   color: white;
+   font-weight: 600;
+   line-height: 50px;
+   padding: 0 30px;
+   margin-left: 100px;
+   margin-top: 10px;
+
+}
+
+#part1 nav ul{
+   list-style: none;
+   float: right;
+   margin-top: -60px;
+margin-right: 100px;
+
+}
+
+#part1 nav ul li{
+   float: left;
+   display: block;
+   
+  }
+
+#part1 nav ul li p{
+   height: 5px;
+   width: 90px;
+   background-color: red;
+   transition: all 0.7s;
+transform: scale(0);
+margin-left: 10px;
+}
+
+#part1 nav ul li:hover p{
+   transform: scale(1);
+}
+
+#part1 nav ul li a{
+   text-decoration: none;
+   display: block;
+   color: white;
+   padding: 19px 20px;
+   font-size:20px ;
+   transition: all 1s;
+   }
+
+#part1 h2{
+    position: absolute;
+    color: white;
+    top:300px;
+    left:200px;
+}
+
+#part1 .head{
+    position: absolute;
+    color: white;
+    top:350px;
+    left:200px;
+font-size: 50px;
+}
+
+#part1 .image img{
+   
+   
+   height: 390px;
+   width: 350px;
+   opacity: 0.7;
+margin-left: 20px;
+   border-top-left-radius: 180px;
+   border-bottom-left-radius: 50px;
+   border-bottom-right-radius: 180px;
+   border-top-right-radius: 50px;
+}
+
+#part1 .image{
+   z-index: 1;
+   background-image: linear-gradient(to top,red,rgba(0,0,0,0.1));
+   height: 450px;
+   width: 400px;
+   position: absolute;
+   
+   top:200px;
+   right:300px;
+  
+}
+
+#part2{
+   height: 100%;
+   width: 100%;
+   margin-top: 55em;
+   display: flex;
+   justify-content: space-around;
+   
+}
+
+#part2 img{
+   height: 450px;
+   width: 350px;
+   
+   border-top-left-radius: 180px;
+   border-bottom-left-radius: 50px;
+   border-bottom-right-radius: 180px;
+   border-top-right-radius: 50px;
+
+}
+
+#part2 .about{
+   height: 500px;
+   width: 650px;
+   margin-left: -100px;
+}
+
+#part2 .about h1{
+   color: white;
+   font-size: 60px;
+}
+
+
+#part2 .about p{
+   color: white;
+}
+
+#part2 .container{
+   height: 300px;
+   width: 400px;
+margin-top: 40px;
+   display: flex;
+   
+
+   position: relative;
+}
+
+#part2 .container label{
+   color: white;
+   font-size: 25px;
+   font-weight: 500;
+   display: block;
+}
+
+#part2 .container label p{
+   height: 5px;
+   width: 50px;
+   background-color: red;
+   border-radius: 2px;
+   transform:scale(0);
+transition: all 0.5s;
+}
+
+#part2 .container label:hover p{
+   
+   transform:scale(1);
+
+}
+
+#part2 .container .skill{
+   height: 200px;
+   width: 200px;
+   display: none;
+   background-color: black;
+}
+
+#part2 .container .skill  h2{
+   color: red;
+}
+
+#part2 .container .education{
+   height: 200px;
+   width: 200px;
+   display: none;
+background-color: black;
+}
+
+#part2 .container .education h2{
+   color: red;
+}
+
+#part2 .container .education h3{
+   color:white;
+}
+
+#part2 .container .experience{
+   height: 230px;
+   width: 250px;
+   display: none;
+ background-color: black;
+}
+
+#part2 .container .experience h2{
+   color: red;
+}
+
+#part2 .container .experience h3{
+   color: white;
+}
+
+#skill,#education,#experience{
+   display: none;
+}
+
+#skill:checked ~ .skill{
+   position: absolute;
+   top:50px;
+   left: 50px;
+   display: block;
+}
+
+#education:checked ~ .education{
+   position: absolute;
+   top:50px;
+   left: 50px;
+   display: block;
+}
+
+#experience:checked ~ .experience{
+   position: absolute;
+   top:50px;
+   left: 50px;
+   display: block;
+}
+
+
+#part3{
+   height: 100%;
+   width: 100%;
+   margin-top: 200px;
+   text-align: left;
+   padding: 100px;
+} 
+
+#part3 h1{
+   color: white;
+   font-size: 70px;
+}
+
+#part3 .services{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+#part3 .services .wd,.ud,.ad {
+   height: 380px;
+   width: 380px;
+   border-radius: 10px;
+   background-color: rgba(255,255,255,0.3);
+   padding:20px 20px;
+   transition: all 0.8s;
+}
+
+#part3 .services i{
+   font-size: 50px; 
+   color:white; 
+}
+
+#part3 .services h2{
+   font-size: 30px;
+   color: white;
+}
+
+#part3 .services p{
+   font-size: 17px;
+   color: white;
+}
+
+#part3 .services a{
+   text-decoration: none;
+   color: white;
+   font-size: 18px;
+}
+
+#part3 .wd:hover{
+box-shadow: 0 0 5px white;
+   background-color: rgb(128, 0, 36);
+   margin-top: -20px;
+}
+
+#part3 .ud:hover{
+   box-shadow: 0 0 5px white;
+      background-color: rgb(128, 0, 36);
+      margin-top: -20px;
+   }
+   
+
+   #part3 .ad:hover{
+      box-shadow: 0 0 5px white;
+         background-color: rgb(128, 0, 36);
+         margin-top: -20px;
+      }
+      
+   #part4{
+      height: 100%;
+      width: 100%;
+      margin-top: 150px;
+      padding: 0 100px;
+   }
+
+   #part4 h1{
+      font-size: 70px;
+      color: white;
+   }
+
+   #part4 .card{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 80%;
+      
+   }
+
+   #part4 .card1 img{
+      height: 500px;
+      width: 400px;
+   }
+
+   
+
+   #part4 .card1{
+      height: 500px;
+      width: 400px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 20px;
+      cursor: pointer;
+   }
+
+   #part4 .content{
+      position: absolute;
+      top: 100%;
+      height: 500px;
+      width: 400px;
+      background-image: linear-gradient(to top,rgb(213, 45, 73),rgba(213, 45, 73,0.8),rgba(213, 45, 73,0.3));
+      text-align: center;
+      padding: 200px 40px;
+      transition: 0.5s;
+      cursor: pointer;
+      color: white;
+   }
+
+   #part4 .card1:hover .content{
+      top:0;
+   }
+
+   #part4 .content p{
+      color: white;
+   }
+
+
+
+   #part4 .content a{
+    text-decoration: none;
+    
+
+   }
+ #part4 .content a i{
+      font-size: 20px;
+      color:rgb(213, 45, 73) ;
+      height: 60px;
+      width: 60px;
+      background-color: white;
+      border-radius: 50%;
+      text-align: center;
+      padding: 16px 0px;
+   }
+
+   
+   #part4 input{
+      height: 50px;
+      width: 140px;
+      border: 2px solid rgb(213, 45, 73) ;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      font-weight: 300;
+      border-radius: 10px;
+      transition: all 0.6s;
+      margin-top: 50px;
+      margin-left: 600px;
+   }
+
+   #part4 input:hover{
+      background-color:rgb(213, 45, 73)  ;
+   }   
+
+   #part5{
+      height: 100%;
+      width: 100%;
+      margin-top: 200px;
+      display: flex;
+      padding: 0 150px;
+      
+   }
+
+   #part5 .contact{
+      height: 300px;
+      width: 500px;
+      text-align: left;
+   }
+
+   #part5 .contact h1{
+    font-size: 70px; 
+    color: white; 
+   }
+
+   #part5 .contact .icon{
+      font-size: 25px;
+      color: red;
+   }
+
+   #part5 .contact font{
+      color: white;
+      font-size: 20px;
+
+   }
+
+   #part5 .contact i{
+      font-size: 30px;
+      color: white;
+   }
+
+   #part5 .contact .download{
+      text-decoration: none;
+      height: 50%;
+      width: 150px;
+      background-color: rgb(213, 45, 73);
+      border-radius: 10px;
+      color: white;
+      font-size: 20px;
+      font-weight: 300;
+      cursor: pointer;
+      padding: 10px 10px;
+   }
+
+   #part5 .detail{
+      height: 600px;
+      width: 300px;
+   }
+
+   #part5 .detail .inp{
+      height: 50px;
+      width: 700px;
+      background-color: rgba(255,255,255,0.3);
+      border: none;
+      color: white;
+      border-radius: 10px;
+      padding: 20px 20px;
+      cursor: pointer;
+   }
+
+   #part5 .detail input::placeholder{
+      color: white;
+      font-size: 20px;
+   }
+
+
+   #part5 .detail textarea{
+      height: 200px;
+      width: 700px;
+      background-color: rgba(255,255,255,0.3);
+      border: none;
+      color: white;
+      border-radius: 10px;
+      padding: 20px 20px;
+   }   
+
+   #part5 .detail textarea::placeholder{
+      color: white;
+      font-size: 20px;
+   }
+
+   #part5 .detail .submit{
+      height: 40px;
+      width: 150px;
+      background-color: rgb(213, 45, 73);
+      border-radius: 10px;
+      color: white;
+      font-size: 20px;
+      font-weight: 300;
+      border: none;
+      cursor: pointer;
+   }
+
+   
